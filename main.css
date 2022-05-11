@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  transition: 1s ;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.banner
+{
+  height: 100vh;
+  width: 100%;
+  background-color:black;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.navbar{
+  width: 85%;
+  margin: left;
+  padding: 30px;
+background-color:black;
+  align-items: left;
+
+}
+.logo{
+  flex-basis: 15%;
+  cursor: pointer;
+}
+.logo img{
+  width: 125px;
+  margin: 20px 0;
+}
+nav,.navbar ul{
+  display: flex;
+  align-items: center;
+}
+.navbar ul li{
+  list-style: none;
+  color: #fff;
+  margin-right: 40px;
+  background-color: black;
+  color:white;
+  cursor: pointer;
+float:left;
+}
+.navbar ul li a{
+  color: white;
+  text-decoration: none;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 40px 20px 0 20px;
+}
+
+.container .heading{
+  width: 50%;
+  padding-bottom: 50px;
+}
+.container .heading h3{
+  font-size: 3em;
+  font-weight: bolder;
+  cursor: pointer;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #222;
+  color:white;
+}
+
+.container .heading h3 span{
+  font-weight: 100;
+}
+.container .box{
+ display: flex;
+ flex-direction: row;
+ cursor: pointer;
+ justify-content: space-between;
+ transition: transform 0.5s;
+ background-color:black;
+}
+
+.container .box .dream{
+  display: flex;
+  flex-direction: column;
+  width: 32.5%;
+}
+
+.container .box .dream img{
+  width: 100%;
+  padding-bottom: 15px;
+  transition: transform 0.5s;
+  border-radius: 5px;
+}
+.container .box .dream img:hover{
+  transform: scale(1.05);
+}
+
+.container .btn{
+  margin: 40px 0 70px 0;
+  background: #222;
+  padding: 15px 40px ;
+  border-radius: 5px;
+}
+
+.container .btn a{
+ color: #fff;
+ font-size: 1.2em;
+ text-decoration: none;
+ font-weight: bolder;
+ letter-spacing: 3px;
+}
+
+@media only screen and (max-width: 769px){
+    .container .box{
+   flex-direction: column;
+  }
+
+.container .box .dream{
+  width: 100%;
+}
+
+
+
+
+
+}
+
+@media only screen and (max-width: 643px){
+.container .heading{
+  width: 100%;
+}
+.container .heading h3{
+  font-size: 1em;
+
+}
+
+
+
+
+
+
+
+}
